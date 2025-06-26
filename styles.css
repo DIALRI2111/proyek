@@ -1,0 +1,356 @@
+/* Sidebar Collapsible */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  border-right: 1px solid #CC9189;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar .logo {
+  margin: 0 20px 20px;
+  color: #CC9189;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.side-nav a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #CC9189;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #8B6651;
+}
+
+/* Main content */
+#main {
+  transition: margin-left 0.3s;
+  padding: 20px;
+}
+
+/* Open button */
+.openbtn {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #CC9189;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.openbtn:hover {
+  background-color: #8B6651;
+}
+
+/* Tombol ✖ dalam sidebar */
+.sidebar .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 22px;
+  text-decoration: none;
+  color: #CC9189;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sidebar .closebtn:hover {
+  color: #8B6651;
+}
+
+
+/* Hero and layout remains same */
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-header {
+  background: white;
+  padding: 20px 30px;
+  border-bottom: 1px solid #CC9189;
+}
+
+.mid-header {background: white;
+  padding: 20px 30px;
+  border-bottom: 1px solid #CC9189;
+
+}
+
+.top-header h1 {
+  margin: 0;
+  color: #CC9189;
+  font-size: 22px;
+}
+
+.mid-header h1{
+  margin: 0;
+  color: #CC9189;
+  font-size: 22px;
+
+}
+
+.main-content {
+  max-width: 960px;
+  margin: 0;
+  padding: 30px 20px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.main-content img{
+  width: 50%;
+}
+
+.hero {
+  background: #fff3ec;
+  padding: 30px 20px;
+  width: 1400px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-image:url(ichiraku.jpg);
+  background-position: center;
+  background-size:cover;
+}
+
+.hero h2 {
+  font-size: 26px;
+  color:black;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-hero {
+  display: inline-block;
+  background: #cc9189c1;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s;
+}
+
+.btn-hero:hover {
+  background: #8B6651;
+  transform: translateY(-3px) scale(1.04);
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background: white;
+  border-top: 1px solid #CC9189;
+  text-align: center;
+  color: #CC9189;
+  font-weight: 600;
+}
+
+/* menu */
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+/* varian Lain */
+.section-title {
+  font-size: 24px;
+  margin:20px;
+  color: #000000;
+  text-align: left;
+}
+
+.section-title h1 {
+  font-weight: bold;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto; /* sejajarkan ke tengah */
+  padding: 0 20px; /* padding samping seperti konten lainnya */
+  box-sizing: border-box;
+}
+
+.product-card2 {
+  background-color: #fff;
+  background-image: url(narutoramen.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 300px; /* Atur tinggi minimum agar background konsisten */
+}
+ .product-info2{
+  text-align: center;
+  color: rgb(255, 255, 255);
+ }
+
+.btn-hero2{
+  display: inline-block;
+  background: #cd5040c1;
+  color:black;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s;
+ }
+.btn-hero2:hover {
+  background: #f16412;
+  transform: translateY(-3px) scale(1.04);
+}
+
+.section-container {
+  max-width: 960px; /* Menyamai konten utama */
+  margin: 0 auto;   /* Pusatkan secara horizontal */
+  padding: 0 20px;  /* Spasi samping */
+}
+
+.section-title {
+  font-size: 24px;
+  color: #000000;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: #cc9189c1;
+  max-width: 960px;
+  margin: 30px 0 30px 0; /* margin kiri 0 */
+}
+
+
+/* Dropdown dalam sidebar */
+.dropdown-btn {
+  padding: 12px 20px;
+  font-weight: 600;
+  color: #CC9189;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-btn:hover {
+  color: #8B6651;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 20px;
+}
+
+.dropdown-container a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 14px;
+  color: #CC9189;
+  text-decoration: none;
+}
+
+.dropdown-container a:hover {
+  color: #8B6651;
+}
+
+/* Layout agar rapih */
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-menu-link {
+  font-weight: 600;
+  padding: 12px 20px;
+  color: #CC9189;
+  text-decoration: none;
+}
+
+.dropdown-btn {
+  font-weight: 600;
+  background: none;
+  border: none;
+  color: #CC9189;
+  padding: 0 20px 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.3s;
+}
+
+.dropdown-btn:hover,
+.main-menu-link:hover {
+  color: #8B6651;
+}
+
+.dropdown-container {
+  display: none;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .openbtn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}

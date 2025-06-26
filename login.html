@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Madai Ramen Mengyo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .form-container {
+      max-width: 400px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .form-container h2 {
+      color: #CC9189;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .form-container button {
+      width: 100%;
+      background: #CC9189;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form-container button:hover {
+      background: #8B6651;
+    }
+
+    .form-footer {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .form-footer a {
+      color: #CC9189;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .form-footer a:hover {
+      color: #8B6651;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    
+    <div class="form-container">
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Kata Sandi" required />
+        <button type="submit">Masuk</button>
+      </form>
+      <div class="form-footer">
+        Belum punya akun? <a href="register.html">Daftar di sini</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">✖</a>
+    <h2 class="logo" ><i class="fa-solid fa-utensils"></i> HitRan</h2>
+    <nav class="side-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </div>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "220px";
+      document.getElementById("main").style.marginLeft = "220px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+</body>
+</html>
